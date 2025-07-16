@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Palindrome Check</title>
+</head>
+<body>
+
+
+
+<script>
+  var num = 121; 
+  var original = num;
+  var reverse = 0;
+
+  while (num > 0) {
+    var digit = num % 10;
+    reverse = reverse * 10 + digit;
+    num = Math.floor(num / 10);
+  }
+
+  if (original == reverse) {
+    console.log(original + " is a palindrome ");
+  } else {
+    console.log(original + " is not a palindrome ");
+  }
+</script>
+
+</body>
+</html>

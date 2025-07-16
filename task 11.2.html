@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Password Checker</title>
+</head>
+<body>
+
+<script>
+  var enteredPassword = "brave123";   
+  var correctPassword = "brave123";   
+
+  var ismatch = true;
+
+ 
+    for (var i = 0; i < enteredPassword.length; i++) {
+      if (enteredPassword[i] !== correctPassword[i]) {
+        ismatch = false;
+        break;
+      }
+    }
+
+
+  if (ismatch) {
+    console.log(" Password is correct!");
+  } else {
+    console.log(" Wrong password!");
+  }
+</script>
+
+</body>
+</html>
